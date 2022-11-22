@@ -1,0 +1,89 @@
+﻿<Window x:Class="TrafficFlow.View.Settings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrafficFlow.View"
+        xmlns:viewModel="clr-namespace:TrafficFlow.ViewModel"
+        mc:Ignorable="d"
+        Title="Settings"
+        Height="600"
+        WindowStyle="None"
+        Width="1000"
+        FontSize="24">
+
+    <Window.DataContext>
+        <viewModel:SettingsViewModel/>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.30548*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                BorderThickness="2"
+                BorderBrush="Black">
+            <StackPanel Grid.Column="0"
+                        Background="{StaticResource MenuBackground}">
+                <Button Width="170"
+                        Height="68"
+                        FontSize="24"
+                        Command="{Binding Path=ChangeScreenSettingsCommand}"
+                        Margin="0,50,0,0"
+                        Content="Settings"/>
+                <Button Width="170"
+                        Height="68"
+                        FontSize="24"
+                        Command="{Binding Path=ChangeScreenDetailsCommand}"
+                        Margin="0,50,0,0"
+                        Content="Details"/>
+                <Button Width="170"
+                        Height="68"
+                        FontSize="24"
+                        Command="{Binding Path=ChangeScreenDashboardCommand}"
+                        Margin="0,50,0,0"
+                        Content="Dashboard"/>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Column="1">
+
+            <Label FontSize="30"
+                   Content="Settings"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,30,0,30"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0">
+                    <TextBox Margin="30"
+                             Text="destination ip"></TextBox>
+                    <TextBox Margin="30"
+                             Text="destination port"></TextBox>
+                    <TextBox Margin="30"
+                             Text="time (in sec)"></TextBox>
+                    <TextBox Margin="30"
+                             Text="number of packets"></TextBox>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1">
+                    <RadioButton Content="TCP"/>
+                    <RadioButton Content="UDP"/>
+                    <TextBox Margin="30"
+                             Text="TCP Window Size"></TextBox>
+                    <TextBox Margin="30"
+                             Text="Frame Length"></TextBox>
+                    <TextBox Margin="30"
+                             Text="packets/sec"></TextBox>
+                </StackPanel>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,135 @@
+﻿<Window x:Class="TrafficFlow.View.Details"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrafficFlow.View"
+        xmlns:viewModel="clr-namespace:TrafficFlow.ViewModel"
+        mc:Ignorable="d"
+        Title="Dashboard"
+        Height="600"
+        WindowStyle="None"
+        Width="1000"
+        FontSize="24">
+
+    <Window.DataContext>
+        <viewModel:DetailsViewModel/>
+    </Window.DataContext>
+
+
+    <Grid>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.30548*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                BorderThickness="2"
+                BorderBrush="Black">
+            <StackPanel Grid.Column="0"
+                        Background="{StaticResource MenuBackground}">
+                <Button Width="170"
+                        Height="68"
+                        FontSize="24"
+                        Command="{Binding Path=ChangeScreenSettingsCommand}"
+                        Margin="0,50,0,0"
+                        Content="Settings"/>
+                <Button Width="170"
+                        Height="68"
+                        FontSize="24"
+                        Command="{Binding Path=ChangeScreenDetailsCommand}"
+                        Margin="0,50,0,0"
+                        Content="Details"/>
+                <Button Width="170"
+                        Height="68"
+                        FontSize="24"
+                        Command="{Binding Path=ChangeScreenDashboardCommand}"
+                        Margin="0,50,0,0"
+                        Content="Dashboard"/>
+            </StackPanel>
+        </Border>
+
+        <StackPanel Grid.Column="1">
+            <Label FontSize="30"
+                   Content="Details"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top"
+                   Margin="0,30,0,30"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0"
+                       Grid.Row="0"
+                       Content="xxx frames sent"
+                       Margin="20"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="1"
+                       Grid.Row="0"
+                       Margin="20"
+                       Content="xxx frames received"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="1"
+                       Margin="20"
+                       Content="xxx sec"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="1"
+                       Grid.Row="1"
+                       Margin="20"
+                       Content="xxx frames/sec"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="2"
+                       Margin="20"
+                       Content="xxx Bits sent"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="1"
+                       Grid.Row="2"
+                       Margin="20"
+                       Content="xxx Bits/received"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="3"
+                       Margin="20"
+                       Content="xxx Byte sent"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="1"
+                       Grid.Row="3"
+                       Margin="20"
+                       Content="xxx Byte/received"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="0"
+                       Grid.Row="4"
+                       Margin="20"
+                       Content="xxx Received Drops"
+                       HorizontalAlignment="Center"/>
+
+                <Label Grid.Column="1"
+                       Grid.Row="4"
+                       Margin="20"
+                       Content="xxx Received Errors"
+                       HorizontalAlignment="Center"/>
+
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>
