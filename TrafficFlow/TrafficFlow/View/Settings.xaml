@@ -74,8 +74,10 @@
                 </StackPanel>
 
                 <StackPanel Grid.Column="1">
-                    <RadioButton Content="TCP"/>
-                    <RadioButton Content="UDP"/>
+                    <WrapPanel>
+                        <RadioButton Content="TCP" Margin="30"/>
+                        <RadioButton Content="UDP" Margin="30"/>
+                    </WrapPanel>
                     <TextBox Margin="30"
                              Text="TCP Window Size"></TextBox>
                     <TextBox Margin="30"

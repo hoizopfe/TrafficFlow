@@ -1,28 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexx\\Documents\\traffic-flow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj": {}
+    "C:\\Users\\thoma\\Documents\\TrafficFlow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexx\\Documents\\traffic-flow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj": {
+    "C:\\Users\\thoma\\Documents\\TrafficFlow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexx\\Documents\\traffic-flow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj",
+        "projectUniqueName": "C:\\Users\\thoma\\Documents\\TrafficFlow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj",
         "projectName": "TrafficFlow",
-        "projectPath": "C:\\Users\\alexx\\Documents\\traffic-flow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj",
-        "packagesPath": "C:\\Users\\alexx\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexx\\Documents\\traffic-flow\\TrafficFlow\\TrafficFlow\\obj\\",
+        "projectPath": "C:\\Users\\thoma\\Documents\\TrafficFlow\\TrafficFlow\\TrafficFlow\\TrafficFlow.csproj",
+        "packagesPath": "C:\\Users\\thoma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thoma\\Documents\\TrafficFlow\\TrafficFlow\\TrafficFlow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\alexx\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thoma\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -58,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

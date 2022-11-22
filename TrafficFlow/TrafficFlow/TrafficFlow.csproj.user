@@ -7,7 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="UserControll\CtlButton.xaml.cs">
+    <Compile Update="UserControl\CtlButton.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="View\Dashboard.xaml.cs">
@@ -21,7 +21,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="UserControll\CtlButton.xaml">
+    <Page Update="UserControl\CtlButton.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\Dashboard.xaml">
