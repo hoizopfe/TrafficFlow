@@ -28,6 +28,8 @@ namespace TrafficFlow.Model
 
         public void ChangeScreen(Window wnd)
         {
+            wnd.Top = App.Current.MainWindow.Top;
+            wnd.Left = App.Current.MainWindow.Left;
             wnd.Show();
             App.Current.MainWindow.Close();
             App.Current.MainWindow = wnd;
